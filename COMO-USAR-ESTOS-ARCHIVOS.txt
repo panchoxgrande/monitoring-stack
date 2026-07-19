@@ -1,0 +1,45 @@
+╔═══════════════════════════════════════════════════════════════╗
+║  Monitoring Stack — Archivos Listos para GitHub      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+INSTRUCCIONES:
+
+1. EXTRAER ESTA CARPETA en tu máquina Windows
+   └─ Ejemplo: C:\Users\TuUsuario\zabbix-monitoring-stack
+
+2. ABRIR Git Bash o PowerShell en esa carpeta
+   └─ Click derecho → Git Bash Here (o Open PowerShell here)
+
+3. EJECUTAR ESTOS COMANDOS (copia y pega):
+
+   # Generar Personal Access Token en:
+   # https://github.com/settings/tokens/new
+   # (Name: comfrut-push, Scope: repo, Expiration: 90 days)
+
+   # Luego ejecuta:
+   git remote set-url origin https://panchoxgrande:PEGA_TU_TOKEN_AQUI@github.com/panchoxgrande/zabbix-monitoring-stack.git
+
+   # Push a GitHub:
+   git push origin main
+
+4. VERIFICAR EN GITHUB
+   └─ https://github.com/panchoxgrande/zabbix-monitoring-stack
+
+¿PROBLEMAS?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Si git dice "fatal: not a git repository":
+  → Esta carpeta NO es un repo git aún
+
+SOLUCIÓN: En Git Bash, ejecuta primero:
+  git init
+  git remote add origin https://github.com/panchoxgrande/zabbix-monitoring-stack.git
+  git branch -M main
+  git add .
+  git commit -m "Initial commit"
+  git push -u origin main
+
+¿NECESITAS AYUDA?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Lee: PUSH_A_GITHUB_INSTRUCCIONES.md
+
+Made with ❤️ | Monitoring Stack | 2026

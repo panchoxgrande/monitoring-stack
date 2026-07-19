@@ -1,0 +1,31 @@
+# Credenciales y secretos - NUNCA commitar
+env.conf
+.env
+rclone.conf
+docker-compose.override.yml
+
+# Datos locales (no en git)
+/data/backups/*
+/data/logs/*
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.docker/
+
+# Temporal
+tmp/
+temp/
+*.tmp

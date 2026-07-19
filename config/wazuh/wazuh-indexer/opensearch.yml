@@ -1,0 +1,5 @@
+network.host: 0.0.0.0
+node.name: node-1
+discovery.type: single-node
+compatibility.override_main_response_version: true
+plugins.security.disabled: true

@@ -219,7 +219,7 @@ services:
     container_name: wazuh-indexer
     restart: unless-stopped
     environment:
-      OPENSEARCH_JAVA_OPTS: "-Xms1g -Xmx1g"
+      OPENSEARCH_JAVA_OPTS: "-Xms2g -Xmx2g"
       bootstrap.memory_lock: "true"
       discovery.type: single-node
       plugins.security.ssl.http.enabled: "false"
@@ -240,7 +240,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 2G
+          memory: 4G
 
   # ============================================================
   # WAZUH MANAGER
